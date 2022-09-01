@@ -1,33 +1,35 @@
 
 /**
- * Write a description of class PhoneNumber_2x14 here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Audrey Cheng
+ * 9/1/22
+ * Phone Number
  */
+
+import java.util.Random;
+
+
 public class PhoneNumber_2x14
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class PhoneNumber_2x14
-     */
-    public PhoneNumber_2x14()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public static void main(String[] args) {
+        
+        int digit1, digit2, digit3;
+        int second;
+        int third;
+        
+        Random generator = new Random();
+        digit1 = generator.nextInt(7) + 1;
+        digit2 = generator.nextInt(8);
+        digit3 = generator.nextInt(8);
+        
+        second = generator.nextInt(643) + 100;
+        third = (int) (Math.random() * 1000); 
+        
+        System.out.println("Random phone number: " +digit1 + digit2 + digit3 + "-" + second + "-" + third);
+        /*
+         * Output
+         * First: 
+         * Second:
+         */
+        
     }
 }

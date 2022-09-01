@@ -1,9 +1,10 @@
 
 /**
  * Audrey Cheng
+ * 8/30/22
+ * Split the bill
  * Splitting the bill between people
  * Worked with Michael Mihailov
- * 8/30/22
 */
 
 import java.util.Scanner;
@@ -12,6 +13,8 @@ public class SplitTheBill
 {
     public static void main(String args[]) {
         Scanner kb = new Scanner(System.in);
+        
+        
         System.out.print("Enter number of people: ");
         int numPeople = kb.nextInt();
         System.out.print("Enter the total bill: ");
@@ -19,6 +22,7 @@ public class SplitTheBill
         double tip = bill * 0.2;
         double total = bill + tip;
         
+        //
         double billPay = bill / numPeople;
         double tipPay = tip / numPeople;
         double totalPay = billPay + tipPay;

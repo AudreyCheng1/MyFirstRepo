@@ -2,6 +2,7 @@
 /**
  * Audrey Cheng
  * 8/31/22
+ * Coins
  * Determine the value of coins in a jar in dollars and cents
  */
 
