@@ -20,11 +20,11 @@ public class Sphere_2x9
         DecimalFormat fmt = new DecimalFormat(".0000");
         
         Scanner kb = new Scanner(System.in);
-        System.out.print("Enter the radius of the sphere: ");
+        System.out.print("Enter the radius of the sphere: "); //take input
         radius = kb.nextDouble();
         
-        surfaceArea = 4 * Math.PI * radius * radius;
-        volume = (4.0 / 3) * Math.PI * Math.pow(radius, 3);
+        surfaceArea = 4 * Math.PI * radius * radius; //find surface area
+        volume = (4.0 / 3) * Math.PI * Math.pow(radius, 3); //find volume
         
         System.out.println("Surface Area: " +fmt.format(surfaceArea));
         System.out.println("Volume: " +fmt.format(volume));

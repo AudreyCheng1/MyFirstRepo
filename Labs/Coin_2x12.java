@@ -20,7 +20,7 @@ public class Coin_2x12
         
         NumberFormat fmt = NumberFormat.getCurrencyInstance();
         
-        Scanner kb = new Scanner(System.in);
+        Scanner kb = new Scanner(System.in); //take input for each coin
         System.out.print("Quarters: ");
         quarters = kb.nextInt();
         
@@ -33,13 +33,13 @@ public class Coin_2x12
         System.out.print("Pennies: ");
         pennies = kb.nextInt();
         
-        total = quarters * 25 + dimes * 10 + nickels * 5 + pennies;
-        dollars = total / 100;
+        total = quarters * 25 + dimes * 10 + nickels * 5 + pennies; //overall total in cents
+        dollars = total / 100; //divide to leave cents
         cents = total - dollars * 100;
         
-        finalTotal = dollars + cents / 100.0;
+        finalTotal = dollars + cents / 100.0; //adds dollars with cents
         
-        System.out.println("Total: " +fmt.format(finalTotal));
+        System.out.println("Total: " +fmt.format(finalTotal)); //prints with dollar and cents format
         
     }
     
